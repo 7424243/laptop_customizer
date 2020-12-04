@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import slugify from 'slugify';
-import {USCurrencyFormat} from '../App';
 import FeatureFieldset from '../FeatureFieldset/FeatureFieldset';
 
 class OrderForm extends Component {
