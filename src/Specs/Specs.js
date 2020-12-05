@@ -4,12 +4,21 @@ import React, {Component} from 'react';
 import FeatureFieldset from '../FeatureFieldset/FeatureFieldset';
 
 
-class Specs extends Component {
+class Spec extends Component {
     render() {
         return (
-            <FeatureFieldset />
-        )
+            <fieldset className="feature" >
+              <legend className="feature__name">
+                <h3>{this.props.name}</h3>
+              </legend>
+              <FeatureFieldset 
+                  items={this.props.parts}
+                  selectedName={this.props.selectedPart.name}
+                  onChange={this.props.onChange}
+                  featureName={this.props.name}/>
+            </fieldset>
+          );  
     }
 }
 
-export default Specs;
+export default Spec;

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import OrderForm from './OrderForm/OrderForm';
 import TotalsSection from './TotalsSection/TotalsSection';
-import FEATURES from './FEATURES';
+
 
 
 
@@ -56,8 +56,7 @@ class App extends Component {
         <main>
           <form className="main__form">
             <h2>Customize your laptop</h2>
-            <OrderForm 
-              features={FEATURES} 
+            <OrderForm  
               selected={this.state.selected}
               onChange={this.updateFeature}/>
           </form>
