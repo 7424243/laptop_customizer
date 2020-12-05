@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import FeatureFieldset from '../FeatureFieldset/FeatureFieldset';
+import Specs from '../Specs/Specs';
 
 
 
